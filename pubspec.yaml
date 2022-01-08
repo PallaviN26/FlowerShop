@@ -31,6 +31,8 @@ dependencies:
     sdk: flutter
   scoped_model: ^1.1.0
   http: ^0.13.4
+  path_provider:
+  sqflite:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -68,6 +70,13 @@ flutter:
     - lib/assets/images/gift.png
     - lib/assets/images/ic_pink_rose_bouquet.png
     - lib/assets/images/ic_red_rose_bouquet.png
+    - lib/assets/images/JY523024.png
+    - lib/assets/images/anemones.png
+    - lib/assets/images/color_lilies.png
+    - lib/assets/images/purple_flowers.png
+    - lib/assets/images/white_roses.png
+    - lib/assets/images/pretty_orchids.png
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

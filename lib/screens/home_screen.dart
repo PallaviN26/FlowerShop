@@ -27,6 +27,7 @@ class _homeScreenState extends State<homeScreen> {
                       appBar: AppBar(
                         toolbarHeight: 75,
                         elevation: 0,
+                        leading: IconButton(icon:Icon(Icons.arrow_back), onPressed: (){Navigator.pushReplacementNamed(context, '/login');},),
                         title: Text(
                           "FloraGoGo",
                           style: TextStyle(color:Colors.white,fontSize: 20),
@@ -43,7 +44,7 @@ class _homeScreenState extends State<homeScreen> {
                             borderRadius: BorderRadius.only(topLeft: Radius.circular(25),topRight: Radius.circular(25)),
                             color: Colors.white
                           ),
-                          child: Column(
+                          child: ListView(
                             children: [
                               Container(
                                 margin: EdgeInsets.all(20),
@@ -113,12 +114,12 @@ class _homeScreenState extends State<homeScreen> {
                                 children: [
                                   Container(
                                     width: MediaQuery.of(context).size.width,
-                                    height: 250,
+                                    height:500,
                                     child: ListView.builder(
                                       scrollDirection: Axis.horizontal,
                                       itemCount: popularList.popular.length,
                                       itemBuilder: (context,index){
-                                        return PopularCard(popular: popularList.popular[index],);
+                                        return PopularCard(popular: popularList.popular[index]);
                                       }),
                                   )
                                 ],

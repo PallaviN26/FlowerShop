@@ -1,9 +1,7 @@
 class Popular {
   String imageN, flowerName;
   double cost;
-  Popular({
-    this.imageN = '',
-    this.flowerName = '',
-    this.cost = 0,
-  });
+  int count = 0;
+  Popular(
+      {this.imageN = '', this.flowerName = '', this.cost = 0, this.count = 0});
 }
